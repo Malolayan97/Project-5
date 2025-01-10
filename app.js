@@ -2,7 +2,7 @@ const http = require('http')
 const fs = require("fs")
 const server = http.createServer((req, res) => {
 
-    fs.readFile('abuotme.txt', (err, data) => {
+    fs.readFile('aboutme.txt', (err, data) => {
         if (err) {
             res.writeHead(500, { "content-type": 'text/plain' })
             console.log("sorry can't read from the server")
